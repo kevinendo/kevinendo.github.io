@@ -1,6 +1,5 @@
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 .button {
   background-color: #4CAF50; /* Green */
@@ -77,10 +76,12 @@ background-color: #FFC0CB
 }
 </style>
 <script>
+var defaultsize=100;
+
 function showImage(x) {
 var img = document.createElement("img");
-img.setAttribute('height', '100px');
-img.setAttribute('width', '100px');
+img.setAttribute('height', window.defaultsize);
+img.setAttribute('width', window.defaultsize);
 img.setAttribute('onclick','remove(event)');
 img.src = x;
 var src = document.getElementById("header");
@@ -91,18 +92,34 @@ function remove(e) {
   var element = e.target;
   element.remove();
 }
-  
+
 function removeimages() {
 var images = document.getElementsByTagName('img');
 var l = images.length;
 for (var i = 0; i < l; i++) {
     images[0].parentNode.removeChild(images[0]);
 	}
-}  
+}
+
+function resizeimages(x) {
+var images = document.getElementsByTagName('img');
+var l = images.length;
+window.defaultsize=x;
+for (var i = 0; i < l; i++) {
+    images[i].height=x;
+	images[i].width=x;
+	}
+}
+
 </script>
 </head>
 
 <body>
+<button class="button red "onclick="resizeimages(50)">Small</button>
+<button class="button red "onclick="resizeimages(100)">Medium</button>
+<button class="button red "onclick="resizeimages(200)">Large</button>
+<button class="button red "onclick="resizeimages(400)">X-Large</button>
+<button class="button red "onclick="removeimages()">Remove All</button>
 <button class="button red" onclick="
 showImage('https://i.imgur.com/XRlQ9Tw.jpg'),
 showImage('https://i.imgur.com/UPniz7H.jpg'),
@@ -160,7 +177,6 @@ showImage('https://i.imgur.com/J3mJr3P.jpg'),
 showImage('https://i.imgur.com/Ikt45uy.jpg'),
 showImage('https://i.imgur.com/4JgmHD1.jpg'),
 showImage('https://i.imgur.com/utUBN5S.jpg')">Show All</button>
-<button class="button red "onclick="removeimages()">Hide All</button>
 <button class="button pink" onclick="showImage('https://i.imgur.com/XRlQ9Tw.jpg')">OG Edition (Open)</button>
 <button class="button silver" onclick="showImage('https://i.imgur.com/UPniz7H.jpg')">Silver Edition (125)</button>
 <button class="button orangered" onclick="showImage('https://i.imgur.com/FWDx3cI.jpg')">Gold Edition (75)</button>
