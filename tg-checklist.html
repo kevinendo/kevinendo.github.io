@@ -1,0 +1,214 @@
+<html>
+<head>
+<style>
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 1px 1px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.head {
+  font-weight: bold;
+  font-size: 14px;
+  text-align: right;
+}
+.red {
+/* LE? */
+background-color: #FF0000;
+}
+.orangered {
+/* LE75 */
+background-color: #FF4500;
+}
+.orange {
+/* LE100 */
+background-color: #FF7550;
+}
+.silver {
+/* LE125 */
+background-color: #C0C0C0;
+}
+.steelblue {
+/* LE150 */
+background-color: #B0C4DE;
+}
+.blue {
+/* LE200 */
+background-color: #0000FF;
+}
+.black {
+/* LE250 */
+background-color: #000000;
+}
+.green {
+/* LE300 */
+background-color: #008000;
+}
+.limegreen {
+/* LE350 */
+background-color: #32CD32;
+}
+.goldenrod {
+/* LE400 */
+background-color: #DAA520;
+}
+.mediumpurple {
+/* LE444 */
+background-color: #9370DB;
+}
+.mediumorchid {
+/* LE666 */
+background-color: #BA55D3
+}
+.plum {
+/* LE999 */
+background-color: #DDA0DD
+}
+.pink {
+/* Open */
+background-color: #FFC0CB
+}
+</style>
+<script>
+function showImage(x) {
+var img = document.createElement("img");
+img.setAttribute('height', '100px');
+img.setAttribute('width', '100px');
+img.setAttribute('onclick','remove(event)');
+img.src = x;
+var src = document.getElementById("header");
+src.appendChild(img);
+}
+
+function remove(e) {
+  var element = e.target;
+  element.remove();
+}
+</script>
+</head>
+
+<body>
+<button class="button red" onclick="
+showImage('https://i.imgur.com/XRlQ9Tw.jpg'),
+showImage('https://i.imgur.com/UPniz7H.jpg'),
+showImage('https://i.imgur.com/FWDx3cI.jpg'),
+showImage('https://i.imgur.com/bZb1zC8.jpg'),
+showImage('https://i.imgur.com/nGbNdtR.jpg'),
+showImage('https://i.imgur.com/EATGP7a.jpg'),
+showImage('https://i.imgur.com/fIMHtPI.jpg'),
+showImage('https://i.imgur.com/EARQJmw.jpg'),
+showImage('https://i.imgur.com/r7AzzWz.jpg'),
+showImage('https://i.imgur.com/kfTLWvQ.jpg'),
+showImage('https://i.imgur.com/O0fFzUr.jpg'),
+showImage('https://i.imgur.com/hp2HVpK.jpg'),
+showImage('https://i.imgur.com/Q4qC5fv.jpg'),
+showImage('https://i.imgur.com/GEvz69G.jpg'),
+showImage('https://i.imgur.com/FWqDGUd.jpg'),
+showImage('https://i.imgur.com/Dsig6Ow.jpg'),
+showImage('https://i.imgur.com/oodkoSu.jpg'),
+showImage('https://i.imgur.com/RVNsZgR.jpg'),
+showImage('https://i.imgur.com/2OVistg.jpg'),
+showImage('https://i.imgur.com/3wRdOQZ.jpg'),
+showImage('https://i.imgur.com/4i6iuqp.jpg'),
+showImage('https://i.imgur.com/xKnEplD.jpg'),
+showImage('https://i.imgur.com/ehYPKB2.jpg'),
+showImage('https://i.imgur.com/dPsbchW.jpg'),
+showImage('https://i.imgur.com/vg4mlng.jpg'),
+showImage('https://i.imgur.com/YNm1dvc.jpg'),
+showImage('https://i.imgur.com/NkbdrUo.jpg'),
+showImage('https://i.imgur.com/kbeoAI2.jpg'),
+showImage('https://i.imgur.com/q1kYz2b.jpg'),
+showImage('https://i.imgur.com/NlSROXZ.jpg'),
+showImage('https://i.imgur.com/uhaqtDy.jpg'),
+showImage('https://i.imgur.com/WSGD6Rq.jpg'),
+showImage('https://i.imgur.com/FqSm3ws.jpg'),
+showImage('https://i.imgur.com/dQoZNV4.jpg'),
+showImage('https://i.imgur.com/HMQD730.jpg'),
+showImage('https://i.imgur.com/PBlBSNT.jpg'),
+showImage('https://i.imgur.com/hOfLOLD.jpg'),
+showImage('https://i.imgur.com/YSTvr8v.jpg'),
+showImage('https://i.imgur.com/G78QbFO.jpg'),
+showImage('https://i.imgur.com/4g56w3Z.jpg'),
+showImage('https://i.imgur.com/xAh98Bc.jpg'),
+showImage('https://i.imgur.com/HrAR2Pe.jpg'),
+showImage('https://i.imgur.com/HwtYbrN.jpg'),
+showImage('https://i.imgur.com/a0JLnMP.jpg'),
+showImage('https://i.imgur.com/puR3nsX.jpg'),
+showImage('https://i.imgur.com/kH9hduu.jpg'),
+showImage('https://i.imgur.com/ejJzn3X.jpg'),
+showImage('https://i.imgur.com/3oNGxxz.jpg'),
+showImage('https://i.imgur.com/3yiQgv4.jpg'),
+showImage('https://i.imgur.com/jqrJC8I.jpg'),
+showImage('https://i.imgur.com/fjsYce3.jpg'),
+showImage('https://i.imgur.com/7J8OHSx.jpg'),
+showImage('https://i.imgur.com/J3mJr3P.jpg'),
+showImage('https://i.imgur.com/Ikt45uy.jpg'),
+showImage('https://i.imgur.com/4JgmHD1.jpg'),
+showImage('https://i.imgur.com/utUBN5S.jpg')">Show All</button>
+<button class="button pink" onclick="showImage('https://i.imgur.com/XRlQ9Tw.jpg')">OG Edition (Open)</button>
+<button class="button silver" onclick="showImage('https://i.imgur.com/UPniz7H.jpg')">Silver Edition (125)</button>
+<button class="button orangered" onclick="showImage('https://i.imgur.com/FWDx3cI.jpg')">Gold Edition (75)</button>
+<button class="button orange" onclick="showImage('https://i.imgur.com/bZb1zC8.jpg')">X-Ray (100)</button>
+<button class="button steelblue" onclick="showImage('https://i.imgur.com/nGbNdtR.jpg')">Green Glow (150)</button>
+<button class="button green" onclick="showImage('https://i.imgur.com/EATGP7a.jpg')">Creamsicle (300)</button>
+<button class="button green" onclick="showImage('https://i.imgur.com/fIMHtPI.jpg')">Yardwork (300)</button>
+<button class="button orange" onclick="showImage('https://i.imgur.com/EARQJmw.jpg')">Pink Glow (100)</button>
+<button class="button green" onclick="showImage('https://i.imgur.com/r7AzzWz.jpg')">Death Cult (300)</button>
+<button class="button green" onclick="showImage('https://i.imgur.com/kfTLWvQ.jpg')">Candy Corn (300)</button>
+<button class="button green" onclick="showImage('https://i.imgur.com/O0fFzUr.jpg')">Invisible (300)</button>
+<button class="button green" onclick="showImage('https://i.imgur.com/hp2HVpK.jpg')">Frost (300)</button>
+<button class="button green" onclick="showImage('https://i.imgur.com/Q4qC5fv.jpg')">Bubblegum & Sugar (300)</button>
+<button class="button steelblue" onclick="showImage('https://i.imgur.com/GEvz69G.jpg')">Chocloate Truffle (150)</button>
+<button class="button blue" onclick="showImage('https://i.imgur.com/FWqDGUd.jpg')">Toxic (200)</button>
+<button class="button green" onclick="showImage('https://i.imgur.com/Dsig6Ow.jpg')">Space Cult (300)</button>
+<button class="button green" onclick="showImage('https://i.imgur.com/oodkoSu.jpg')">Ninja (300)</button>
+<button class="button green" onclick="showImage('https://i.imgur.com/RVNsZgR.jpg')">Road Rash (300)</button>
+<button class="button blue" onclick="showImage('https://i.imgur.com/2OVistg.jpg')">Neapolitan (200)</button>
+<button class="button green" onclick="showImage('https://i.imgur.com/3wRdOQZ.jpg')">Bomb Pop (300)</button>
+<button class="button green" onclick="showImage('https://i.imgur.com/4i6iuqp.jpg')">Zombie (300)</button>
+<button class="button green" onclick="showImage('https://i.imgur.com/xKnEplD.jpg')">Robot (300)</button>
+<button class="button blue" onclick="showImage('https://i.imgur.com/ehYPKB2.jpg')">Pink & Fuzzy (200)</button>
+<button class="button mediumpurple" onclick="showImage('https://i.imgur.com/dPsbchW.jpg')">Rangka (444)</button>
+<button class="button blue" onclick="showImage('https://i.imgur.com/vg4mlng.jpg')">Blue Glow (200)</button>
+<button class="button green" onclick="showImage('https://i.imgur.com/YNm1dvc.jpg')">Rev. Death Cult (300)</button>
+<button class="button green" onclick="showImage('https://i.imgur.com/NkbdrUo.jpg')">Hallow Eve (300)</button>
+<button class="button blue" onclick="showImage('https://i.imgur.com/kbeoAI2.jpg')">Dapper (200)</button>
+<button class="button goldenrod" onclick="showImage('https://i.imgur.com/q1kYz2b.jpg')">Silver Specter (400)</button>
+<button class="button pink" onclick="showImage('https://i.imgur.com/NlSROXZ.jpg')">Nerdy (Open)</button>
+<button class="button mediumpurple" onclick="showImage('https://i.imgur.com/uhaqtDy.jpg')">Muertos Rojo (444)</button>
+<button class="button plum" onclick="showImage('https://i.imgur.com/WSGD6Rq.jpg')">Heartbroken (999)</button>
+<button class="button pink" onclick="showImage('https://i.imgur.com/FqSm3ws.jpg')">Luna Ghost (Open)</button>
+<button class="button orange" onclick="showImage('https://i.imgur.com/dQoZNV4.jpg')">Sumo (100)</button>
+<button class="button goldenrod" onclick="showImage('https://i.imgur.com/HMQD730.jpg')">Rubber Ducky (400)</button>
+<button class="button goldenrod" onclick="showImage('https://i.imgur.com/PBlBSNT.jpg')">Ectoplasm (400)</button>
+<button class="button black" onclick="showImage('https://i.imgur.com/hOfLOLD.jpg')">Tiger Shark (250)</button>
+<button class="button goldenrod" onclick="showImage('https://i.imgur.com/YSTvr8v.jpg')">Gumdrop (400)</button>
+<button class="button goldenrod" onclick="showImage('https://i.imgur.com/G78QbFO.jpg')">Bloodbath(400)</button>
+<button class="button green" onclick="showImage('https://i.imgur.com/4g56w3Z.jpg')">Philippine Edition (300)</button>
+<button class="button goldenrod" onclick="showImage('https://i.imgur.com/xAh98Bc.jpg')">Spittin' Contest (400)</button>
+<button class="button black" onclick="showImage('https://i.imgur.com/HrAR2Pe.jpg')">Electric Funeral (250)</button>
+<button class="button goldenrod" onclick="showImage('https://i.imgur.com/HwtYbrN.jpg')">D'AWS (400)</button>
+<button class="button goldenrod" onclick="showImage('https://i.imgur.com/a0JLnMP.jpg')">Oh Canada (400)</button>
+<button class="button goldenrod" onclick="showImage('https://i.imgur.com/puR3nsX.jpg')">Geek Cult (400)</button>
+<button class="button goldenrod " onclick="showImage('https://i.imgur.com/kH9hduu.jpg')">Satan's X-Ray (400)</button>
+<button class="button red" onclick="showImage('https://i.imgur.com/ejJzn3X.jpg')">Saints & Sinners</button>
+<button class="button mediumorchid" onclick="showImage('https://i.imgur.com/3oNGxxz.jpg')">Orange Glow (666)</button>
+<button class="button limegreen" onclick="showImage('https://i.imgur.com/3yiQgv4.jpg')">Muertos (350)</button>
+<button class="button black" onclick="showImage('https://i.imgur.com/jqrJC8I.jpg')">Night Sky (250)</button>
+<button class="button steelblue" onclick="showImage('https://i.imgur.com/fjsYce3.jpg')">Death Mask (150)</button>
+<button class="button green" onclick="showImage('https://i.imgur.com/7J8OHSx.jpg')">Ube Keso (300)</button>
+<button class="button orangered" onclick="showImage('https://i.imgur.com/J3mJr3P.jpg')">Relic Edition (75)</button>
+<button class="button black" onclick="showImage('https://i.imgur.com/Ikt45uy.jpg')">Black Death (250)</button>
+<button class="button mediumorchid" onclick="showImage('https://i.imgur.com/4JgmHD1.jpg')">Voodoo Zombie (666)</button>
+<button class="button goldenrod" onclick="showImage('https://i.imgur.com/utUBN5S.jpg')">Cold Shower (400)</button>
+
+<div id="header"></div>
+
+</body>
+</html>
