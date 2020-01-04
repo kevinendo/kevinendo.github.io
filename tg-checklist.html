@@ -90,6 +90,14 @@ function remove(e) {
   var element = e.target;
   element.remove();
 }
+  
+function removeimages() {
+var images = document.getElementsByTagName('img');
+var l = images.length;
+for (var i = 0; i < l; i++) {
+    images[0].parentNode.removeChild(images[0]);
+	}
+}  
 </script>
 </head>
 
@@ -151,6 +159,7 @@ showImage('https://i.imgur.com/J3mJr3P.jpg'),
 showImage('https://i.imgur.com/Ikt45uy.jpg'),
 showImage('https://i.imgur.com/4JgmHD1.jpg'),
 showImage('https://i.imgur.com/utUBN5S.jpg')">Show All</button>
+<button class="button red "onclick="removeimages()">Hide All</button>
 <button class="button pink" onclick="showImage('https://i.imgur.com/XRlQ9Tw.jpg')">OG Edition (Open)</button>
 <button class="button silver" onclick="showImage('https://i.imgur.com/UPniz7H.jpg')">Silver Edition (125)</button>
 <button class="button orangered" onclick="showImage('https://i.imgur.com/FWDx3cI.jpg')">Gold Edition (75)</button>
